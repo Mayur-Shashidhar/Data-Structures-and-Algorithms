@@ -1,4 +1,4 @@
-# Spiral Matrix (#54)
+# Spiral Matrix
 - Given an m x n matrix, return all elements of the matrix in spiral order.
 
 ---
@@ -33,7 +33,7 @@ Traversal:
 
 ---
 
-# Key Observation
+## Key Observation
 
 The traversal always occurs along the boundary of the remaining matrix.
 
@@ -58,7 +58,7 @@ right = cols - 1
 
 ---
 
-# Boundary Meaning
+## Boundary Meaning
 
 ```text id="jlwm102"
 top    -> first unvisited row
@@ -72,7 +72,7 @@ right  -> last unvisited column
 
 ---
 
-# Traversal Order
+## Traversal Order
 
 For every iteration:
 
@@ -148,7 +148,7 @@ because the left column has been visited.
 
 ---
 
-# Algorithm
+## Algorithm
 
 ### Step 1
 
@@ -413,9 +413,8 @@ left <= right
 
 These prevent revisiting elements when the boundaries cross.
 
----
 
-# Complexity
+### Complexity
 - Time : O(m * n)
 - Space : O(1)`
 
