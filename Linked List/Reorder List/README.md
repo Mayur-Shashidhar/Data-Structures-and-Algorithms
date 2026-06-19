@@ -6,3 +6,16 @@
 ---
 
 ## Approach
+- Find the middle of the linked list using Fast and Slow Pointers.
+- Split the linked list into two halves.
+- Reverse the second half of the linked list.
+- Take one node from the first half and one node from the reversed second half alternately.
+- Continue merging until all nodes are reordered.
+- Modify the list in-place.
+
+
+### Complexity
+- Time : O(n)
+- Space : O(1)
+
+---
