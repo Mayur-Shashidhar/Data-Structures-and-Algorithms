@@ -5,3 +5,21 @@
 ---
 
 ## Approach
+- Use DFS.
+- Maintain:
+    - Current prefix sum.
+    - Hash map of prefix sums.
+- At every node:
+    - Add node value to current sum.
+    - Check if currentSum - targetSum exists.
+    - Add its frequency to the answer.
+- Store the current prefix sum.
+- Recurse on left and right.
+- Remove the current prefix sum before returning (Backtracking).
+
+
+### Complexity
+- Time : O(n)
+- Space : O(n)
+
+---
